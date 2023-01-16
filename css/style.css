@@ -1,0 +1,90 @@
+:root {
+    --bg-color-dark: rgb(20, 20, 30);
+    --bg-color-light: rgb(225, 225, 225);
+    --bg-color-tertiary: rgb(225, 225, 225);
+    --font-color-on-dark: white;
+    --font-color-on-light: black;
+}
+
+html {
+    font-family: "Josefin Sans", "sans-serif";
+}
+
+body {
+    margin: 0;
+}
+
+.page-section {
+    width: 100%;
+}
+
+#section-intro {
+    background-color: var(--bg-color-dark);
+    color: var(--font-color-on-dark);
+}
+
+#section-problem {
+    background-color: var(--bg-color-dark);
+    height: 900px;
+}
+
+#section-solutions {
+    background-color: var(--bg-color-light);
+    height: 900px;
+}
+
+#section-get-involved {
+    background-color: var(--bg-color-dark);
+    height: 500px;
+}
+
+#section-footer {
+    background-color: var(--bg-color-light);
+    height: 200px;
+}
+
+#intro-section-wrapper {
+    position: relative;
+}
+
+#intro-background-img {
+    width: 100%;
+    display: block;
+}
+
+#header-bar {
+    width: 100%;
+}
+
+#logo-img {
+    height: 125px;
+    position: absolute;
+    top: 15px;
+    left: 5px;
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    width: 325px;
+}
+
+#section-intro a {
+    color: var(--font-color-on-dark);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+#intro-blurb-text {
+    font-size: 1.7rem;
+    width: 40%;
+    min-width: 400px;
+    position: absolute;
+    left: 10%;
+    bottom: 25%;
+}
