@@ -1,7 +1,7 @@
 :root {
     --bg-color-dark: rgb(20, 20, 30);
     --bg-color-light: rgb(225, 225, 225);
-    --bg-color-tertiary: rgb(225, 225, 225);
+    --bg-color-card: rgb(240, 240, 240);
     --font-color-on-dark: white;
     --font-color-on-light: black;
 }
@@ -16,31 +16,34 @@ body {
 
 .page-section {
     width: 100%;
+    padding: 150px 0;
 }
 
 #section-intro {
     background-color: var(--bg-color-dark);
     color: var(--font-color-on-dark);
+    padding: 0;
 }
 
 #section-problem {
     background-color: var(--bg-color-dark);
-    height: 900px;
+    color: var(--font-color-on-dark);
 }
 
 #section-solutions {
     background-color: var(--bg-color-light);
-    height: 900px;
+    color: var(--font-color-on-light);
 }
 
 #section-get-involved {
     background-color: var(--bg-color-dark);
-    height: 500px;
+    color: var(--font-color-on-dark);
 }
 
 #section-footer {
     background-color: var(--bg-color-light);
-    height: 200px;
+    color: var(--font-color-on-light);
+    padding: 100px 0 25px 0;
 }
 
 #intro-section-wrapper {
@@ -75,8 +78,6 @@ body {
 }
 
 #section-intro a {
-    color: var(--font-color-on-dark);
-    text-decoration: none;
     font-size: 0.9rem;
 }
 
@@ -88,3 +89,245 @@ body {
     left: 10%;
     bottom: 25%;
 }
+
+.section-xx-title-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-xx-title-wrapper h1 {
+    font-size: 3.0rem;
+}
+
+#section-problem-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.problem-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 22%;
+    min-width: 250px;
+    max-width: 350px;
+    padding: 0 2%;
+}
+
+.problem-vertical-img {
+    width: 100%;
+}
+
+.problem-vertical-title {
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.problem-vertical-text {
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#section-solutions-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.solutions-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    min-width: 300px;
+    max-width: 550px;
+    padding: 0 3%;
+}
+
+.solutions-vertical-title {
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.solutions-vertical-text {
+    width: 80%;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 25px 0;
+}
+
+.solutions-card {
+    width: 100%;
+    height: 200px;
+    background-color: var(--bg-color-card);
+    box-shadow: 0 0 7px 0 rgb(0 0 0 / 5%);
+    margin-top: 25px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-left-side {
+    width: 40%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 5%;
+}
+
+.card-right-side {
+    width: 50%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.card-header {
+    font-size: 1.2rem;
+    text-align: center;
+    width: 100%;
+}
+
+.card-img {
+    width: 100%;
+}
+
+#get-involved-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#get-involved-text {
+    margin: 50px 0 100px 0;
+    text-align: center;
+    width: 50%;
+    font-size: 1.3rem;
+}
+
+#mc-signup-form-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.mc-field-group {
+    padding: 0 15px;
+}
+
+.mc-field-group label {
+    margin-right: 5px;
+}
+
+.mc-field-group input {
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--font-color-on-dark);
+    border: 3px solid var(--font-color-on-dark);
+    height: 25px;
+    font-family: "Josefin Sans", "sans-serif";
+}
+
+#mce-FNAME {
+    width: 75px;
+}
+
+#mce-LNAME {
+    width: 100px;
+}
+
+#mce-EMAIL {
+    width: 200px;
+}
+
+#mc-embedded-subscribe {
+    background-color: white;
+    height: 33px;
+    color: black;
+    border: 3px solid var(--font-color-on-dark);
+    font-family: "Josefin Sans", "sans-serif";
+}
+
+#footer-contents {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+}
+
+#logo-footer {
+    height: 100px;
+}
+
+.footer-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 50px;
+}
+
+.footer-vertical-heading {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin-bottom: 3px;
+}
+
+.footer-vertical a {
+    font-size: 0.9rem;
+    margin-top: 5px;
+    width: fit-content;
+}
+
+a {
+    text-decoration: none;
+    border: 2px solid rgb(0, 0, 0, 0);
+}
+
+a:link, a:visited, a:active {
+    color: inherit;
+}
+
+a:hover {
+    border-bottom-color: inherit;
+    border-bottom: 2px solid;
+}
+
+#copyright-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#copyright-text-wrapper {
+    width: 80%;
+    margin-top: 100px;
+    padding-top: 25px;
+    border-top: 1.0px solid rgb(175, 175, 175);
+    font-size: 0.7rem;
+}
+
+#copyright-text-wrapper a:hover {
+    border-bottom: 1px solid;
+}
+
