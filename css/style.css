@@ -1,3 +1,8 @@
+
+/* ------------------------------ */
+/* ---  VARIABLES  -------------- */
+/* ------------------------------ */
+
 :root {
     --color-primary: rgb(20, 20, 30);
     --color-secondary: rgb(225, 225, 225);
@@ -5,6 +10,12 @@
     --font-color-on-dark: white;
     --font-color-on-light: black;
 }
+
+
+/* ------------------------------ */
+/* ---  Generic tag styling  ---- */
+/* ------------------------------ */
+
 
 html {
     font-family: "Josefin Sans", "sans-serif";
@@ -33,6 +44,12 @@ a:hover {
     border-bottom: 2px solid;
 }
 
+
+/* -------------------------------------- */
+/* ---  Basic page structure, layout  --- */
+/* -------------------------------------- */
+
+
 .page-section {
     width: 100%;
     padding: 150px 0;
@@ -60,6 +77,23 @@ a:hover {
     padding: 100px 0 25px 0;
 }
 
+.section-xx-title-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-title {
+    font-size: 3.0rem;
+}
+
+
+/* ------------------------------------ */
+/* ---  INTRO section  ---------------- */
+/* ------------------------------------ */
+
+
 #intro-section-wrapper {
     position: relative;
 }
@@ -67,10 +101,6 @@ a:hover {
 #intro-background-img {
     width: 100%;
     display: block;
-}
-
-#header-bar {
-    width: 100%;
 }
 
 #logo-img {
@@ -109,16 +139,10 @@ a:hover {
     line-height: 30px;
 }
 
-.section-xx-title-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+/* ------------------------------------ */
+/* ---  SOLUTIONS section  ------------ */
+/* ------------------------------------ */
 
-.section-title {
-    font-size: 3.0rem;
-}
 
 #section-solutions-content {
     display: flex;
@@ -225,6 +249,27 @@ a:hover {
     color: darkgreen;
 }
 
+
+/* ------------------------------------ */
+/* ---  Parallax image  section  ------ */
+/* ------------------------------------ */
+
+
+.img-parallax-wrapper {
+    background-image: url("../img/home_midscreen.png");
+    min-height: 350px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* -------------------------------------------------------- */
+/* ---  GET INVOLVED section (includes Mailchimp form) ---- */
+/* -------------------------------------------------------- */
+
+
 #get-involved-content {
     display: flex;
     flex-direction: column;
@@ -238,6 +283,7 @@ a:hover {
     width: 50%;
     font-size: 1.3rem;
 }
+
 
 #mc-signup-form-wrapper {
     display: flex;
@@ -288,6 +334,12 @@ a:hover {
     border: 3px solid var(--font-color-on-dark);
     font-family: "Josefin Sans", "sans-serif";
 }
+
+
+/* ------------------------------ */
+/* ---  FOOTER section  --------- */
+/* ------------------------------ */
+
 
 #footer-contents {
     display: flex;
@@ -341,17 +393,28 @@ a:hover {
     border-bottom: 1px solid;
 }
 
-.img-parallax-wrapper {
-    /* The image used */
-    background-image: url("../img/home_midscreen.png");
 
-    /* Set a specific height */
-    min-height: 350px;
+/* ---------------------------------------------------- */
+/* ----- CSS for NARROW WINDOW / MOBILE --------------- */
+/* ---------------------------------------------------- */
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+@media only screen and (max-width: 600px) {
+
+
+    /* ---  INTRO section  ---------------- */
+
+
+    /* ---  SOLUTIONS section  ------------ */
+
+
+    /* ---  Parallax image section  ------- */
+
+
+    /* ---  GET INVOLVED section  --------- */
+
+
+    /* ---  FOOTER section  ---------------- */
+
+    
 }
-
