@@ -261,7 +261,7 @@ a:hover {
 
 .img-parallax-wrapper {
     background-image: url("../img/home_midscreen.png");
-    min-height: 350px;
+    min-height: 450px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -407,7 +407,7 @@ div.mce_inline_error {
 @media only screen and (max-width: 950px) {
 
     .page-section {
-        padding: 80px 0;
+        padding: 50px 0 80px 0;
     }
 
     /* ---  INTRO section  ---------------- */
@@ -416,7 +416,7 @@ div.mce_inline_error {
         width: 80%;
         position: absolute;
         min-width: unset;
-        bottom: 10%;
+        bottom: 20%;
     }
 
     /* ---  SOLUTIONS section  ------------ */
@@ -443,6 +443,7 @@ div.mce_inline_error {
 
     .card-text {
         width: unset;
+        padding: 10px 30px;
     }
 
     /* ---  Parallax image section  ------- */
@@ -453,7 +454,7 @@ div.mce_inline_error {
     #get-involved-text {
         width: 80%;
         font-size: 1.2rem;
-        margin: 50px 0 50px 0;
+        margin: 0 0 50px 0;
     }
 
     #mc-signup-form-wrapper {
