@@ -18,6 +18,20 @@ body::-webkit-scrollbar {
     display: none;  /* Safari and Chrome */
 }
 
+a {
+    text-decoration: none;
+    border: 2px solid rgb(0, 0, 0, 0);
+}
+
+a:link, a:visited, a:active {
+    color: inherit;
+}
+
+a:hover {
+    border-bottom-color: inherit;
+    border-bottom: 2px solid;
+}
+
 .page-section {
     width: 100%;
     padding: 150px 0;
@@ -88,6 +102,11 @@ body::-webkit-scrollbar {
     position: absolute;
     left: 10%;
     bottom: 25%;
+    line-height: 30px;
+}
+
+.intro-text-shadow {
+    background: rgba(16,88,81, 0.7);
 }
 
 .section-xx-title-wrapper {
@@ -120,16 +139,41 @@ body::-webkit-scrollbar {
 }
 
 .solutions-card {
-    height: 275px;
+    height: 280px;
     width: 100%;
-    margin: 25px 0;
+    margin: 0 0 50px 0;
     display: flex;
-    background-color: var(--bg-color-card);
-    border-left: 5px solid darkslateblue;
+    flex-direction: column;
 }
 
-.solutions-card.active {
-    border-left: 5px solid darkgreen;
+.solutions-card-content {
+    height: 275px;
+    width: 100%;
+    display: flex;
+    border-left: 5px solid darkslateblue;
+    background-color: var(--bg-color-card);
+}
+
+.solutions-card-content.active {
+    border-color: darkgreen;
+}
+
+.solutions-card a:hover {
+    border-bottom: none;
+    background: darkgreen;
+    color: white;
+}
+
+.solutions-card-bottom-border {
+    height: 5px;
+    width: 2%;
+    border-left: 5px solid transparent;
+    background: transparent;
+}
+
+.solutions-card-bottom-border.active {
+    background: darkgreen;
+    border-color: darkgreen;
 }
 
 .card-img-wrapper {
@@ -276,20 +320,6 @@ body::-webkit-scrollbar {
     font-size: 0.9rem;
     margin-top: 5px;
     width: fit-content;
-}
-
-a {
-    text-decoration: none;
-    border: 2px solid rgb(0, 0, 0, 0);
-}
-
-a:link, a:visited, a:active {
-    color: inherit;
-}
-
-a:hover {
-    border-bottom-color: inherit;
-    border-bottom: 2px solid;
 }
 
 #copyright-section {
