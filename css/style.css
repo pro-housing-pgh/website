@@ -20,7 +20,8 @@ body::-webkit-scrollbar {
 
 a {
     text-decoration: none;
-    border: 2px solid rgb(0, 0, 0, 0);
+    border: 2px solid transparent;
+    cursor: pointer;
 }
 
 a:link, a:visited, a:active {
@@ -92,21 +93,20 @@ a:hover {
 #section-intro a {
     font-size: 0.9rem;
     margin: 0 10px;
-    cursor: pointer;
 }
 
-#intro-blurb-text {
-    font-size: 1.7rem;
+#intro-text-wrapper {
     width: 40%;
     min-width: 400px;
     position: absolute;
     left: 10%;
     bottom: 25%;
-    line-height: 30px;
 }
 
-.intro-text-shadow {
+#intro-text-blurb {
     background: rgba(16,88,81, 0.7);
+    font-size: 1.7rem;
+    line-height: 30px;
 }
 
 .section-xx-title-wrapper {
@@ -116,7 +116,7 @@ a:hover {
     justify-content: center;
 }
 
-.section-xx-title-wrapper h1 {
+.section-title {
     font-size: 3.0rem;
 }
 
@@ -220,7 +220,7 @@ a:hover {
     margin: 10px 0;
 }
 
-.emphasized-text.active {
+.card-text-citation.active {
     text-decoration: underline;
     color: darkgreen;
 }
@@ -339,14 +339,6 @@ a:hover {
 
 #copyright-text-wrapper a:hover {
     border-bottom: 1px solid;
-}
-
-.section-xx-footer {
-    width: 100%;
-    margin-top: 75px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .img-parallax-wrapper {

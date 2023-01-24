@@ -1,8 +1,15 @@
 
+
 /**
  * This function is called when the page finishes loading
  */
 $(document).ready(function() {
+
+    // Fetch text blurbs from the server and populate elements from the data
+    populateBlurbs();
+
+    // Fetch footer links from server and assemble footer
+    populateFooter();
 
     // Handlers for scrolling to the corresponding page section when
     // one of the nav buttons is clicked
@@ -48,7 +55,7 @@ function handleCardHoverIn() {
     // Add 'active' class to relevant elements to update colors and emphasis
     $(this).find(".solutions-card-content").addClass("active");
     $(this).find(".card-header").addClass("active");
-    $(this).find(".emphasized-text").addClass("active");
+    $(this).find(".card-text-citation").addClass("active");
     $(this).find(".solutions-card-bottom-border").addClass("active");
 
     // Animate the bottom border of the card, shading from left to right
@@ -79,5 +86,77 @@ function handleCardHoverOut() {
             $(this).css("background", "transparent").css("border-color", "transparent");
         });
 
+
+}
+
+
+/**
+ * This method fetches a JSON object containing all the text blurbs for populating
+ * various elements on the page. It retrieves the JSON, parses any special markers
+ * in the contents (e.g. creating links embedded in the text), and updates the
+ * appropriate elements on the page.
+ */
+function populateBlurbs() {
+
+    // Fetch blurb text from the server
+    $.getJSON("/data/blurbs.json", function(data) {
+
+        // Iterate over keys (correspond to ids in html
+        for (const id in data) {
+
+            // Get the text that should fill the specified tag
+            let text = data[id];
+
+            // Check for any links and replace them with <a> tags
+            while (text.indexOf("[[LINK_START, ") !== -1) {
+
+                // Extract link url
+                let linkStart = text.indexOf("[[LINK_START, ");
+                let linkEnd = text.indexOf("]]");
+                let linkUrl = text.substring(linkStart + 14, linkEnd);
+
+                // Replace the link markers with <a> tags
+                let startTag = "<a href='" + linkUrl + "' target='_blank' class='card-text-citation'>"
+                text = text.replace("[[LINK_START, " + linkUrl + "]]", startTag);
+                text = text.replace("[[LINK_END]]", "</a>");
+
+            }
+
+            // Update the html contents for the specified id
+            $("#" + id).html(text);
+
+        }
+    });
+
+}
+
+
+/**
+ * This method fetches a JSON object containing the footer headings and links from
+ * the server, and assembles the footer accordingly.
+ */
+function populateFooter() {
+
+    // Fetch footer headings and links from server
+    $.getJSON("/data/footer.json", function(data) {
+
+        // Iterate over headings
+        for (const heading in data) {
+
+            // Add a new vertical for each heading, create the heading inside it
+            let section = $("<div>").addClass("footer-vertical");
+            section.append($("<h1>").addClass("footer-vertical-heading").html(heading));
+
+            // Add the list of links under the heading
+            for (const link in data[heading]) {
+                let linkTag = $("<a>").attr("href", data[heading][link]).attr("target", "_blank").html(link);
+                section.append(linkTag)
+            }
+
+            // Add the heading and links to the page
+            $("#footer-contents").append(section);
+
+        }
+    });
 
 }
