@@ -74,7 +74,7 @@ a:hover {
 #section-footer {
     background-color: var(--color-secondary);
     color: var(--font-color-on-light);
-    padding: 100px 0 25px 0;
+    padding: 75px 0 25px 0;
 }
 
 .section-xx-title-wrapper {
@@ -99,12 +99,16 @@ a:hover {
 }
 
 #intro-background-img {
-    width: 100%;
     display: block;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
 }
 
 #logo-img {
-    height: 125px;
+    width: 20%;
+    min-width: 150px;
+    max-width: 225px;
     position: absolute;
     top: 15px;
     left: 5px;
@@ -127,8 +131,7 @@ a:hover {
 
 #intro-text-wrapper {
     width: 40%;
-    min-width: 400px;
-    max-width: 625px;
+    min-width: 600px;
     position: absolute;
     left: 10%;
     bottom: 25%;
@@ -310,7 +313,7 @@ a:hover {
     font-family: "Josefin Sans", "sans-serif";
 }
 
-.mce_inline_error {
+div.mce_inline_error {
     margin-top: 10px;
     text-align: center;
     font-style: italic;
@@ -318,7 +321,7 @@ a:hover {
 }
 
 #mce-FNAME {
-    width: 75px;
+    width: 100px;
 }
 
 #mce-LNAME {
@@ -360,7 +363,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 50px;
+    padding: 0 3%;
 }
 
 .footer-vertical-heading {
@@ -385,7 +388,7 @@ a:hover {
 
 #copyright-text-wrapper {
     width: 80%;
-    margin-top: 100px;
+    margin-top: 75px;
     padding-top: 25px;
     border-top: 1.0px solid rgb(175, 175, 175);
     font-size: 0.7rem;
@@ -401,22 +404,98 @@ a:hover {
 /* ---------------------------------------------------- */
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 950px) {
 
+    .page-section {
+        padding: 80px 0;
+    }
 
     /* ---  INTRO section  ---------------- */
 
+    #intro-text-wrapper {
+        width: 80%;
+        position: absolute;
+        min-width: unset;
+        bottom: 10%;
+    }
 
     /* ---  SOLUTIONS section  ------------ */
 
+    .solutions-card {
+        height: unset;
+        flex-direction: column;
+        width: 90%;
+        max-width: 500px;
+    }
+
+    .solutions-card-content {
+        height: unset;
+        flex-direction: column;
+    }
+
+    .image-wrapper {
+        width: 100%;
+    }
+
+    .card-img {
+        width: 100%;
+    }
+
+    .card-text {
+        width: unset;
+    }
 
     /* ---  Parallax image section  ------- */
 
 
     /* ---  GET INVOLVED section  --------- */
 
+    #get-involved-text {
+        width: 80%;
+        font-size: 1.2rem;
+        margin: 50px 0 50px 0;
+    }
+
+    #mc-signup-form-wrapper {
+        flex-direction: column;
+        align-items: unset;
+    }
+
+    .mc-field-group {
+        padding: 10px 0;
+    }
+
+    .mc-field-group label {
+        margin-right: 5px;
+    }
+
+    .mc-field-group label {
+        display: inline-block;
+        width: 50px;
+    }
+
+    .optionalParent {
+        margin-top: 10px;
+        margin-left: 60px;
+    }
 
     /* ---  FOOTER section  ---------------- */
 
+    #footer-contents {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logo-footer {
+        padding-right: 0;
+        padding-bottom: 50px;
+        border-right: none;
+        border-bottom: 1px solid rgb(175, 175, 175);
+    }
+
+    .footer-vertical {
+        align-items: center;
+        padding: 50px 0 0 0;
+    }
 
 }

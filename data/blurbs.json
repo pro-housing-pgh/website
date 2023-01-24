@@ -1,12 +1,23 @@
 {
+
   "intro-text-blurb": "Advocating for abundant, affordable housing in the Pittsburgh region",
+
   "solution-zoning-text-p1": "In much of Pittsburgh, zoning makes it illegal to build anything but the lowest-density housing. Desirable locations near public transit and neighborhood centers are especially under-zoned, stifling business and inflating housing prices by preventing supply from meeting demand.,",
+
   "solution-zoning-text-p2": "We support zoning reforms such as [[LINK_START, https://www.tandfonline.com/doi/full/10.1080/01944363.2019.1651216]] eliminating single-family zoning[[LINK_END]] city-wide and allowing taller and denser [[LINK_START, https://nlihc.org/resource/california-passes-bill-streamline-affordable-housing-production-commercial-zones]]housing in commercial areas[[LINK_END]] and near transit hubs.",
+
   "solution-permitting-text-p1": "Virtually all major housing projects run a gauntlet of hearings, reviews, and community meetings, which lengthen timelines and give veto power to the [[LINK_START, https://www.theatlantic.com/ideas/archive/2022/04/local-government-community-input-housing-public-transportation/629625/]]loudest, angriest voices[[LINK_END]]. These delays reduce the housing that gets built and increase the cost of the housing that is.",
+
   "solution-permitting-text-p2": "We support changes that [[LINK_START, https://nhc.org/policy-guide/expedited-permitting-and-review-the-basics/expedited-permitting-and-review-policies-encourage-affordable-development/]]streamline permitting[[LINK_END]] and diminish the power of anti-democratic special interests to slow development.",
+
   "solution-regulations-text-p1": "Housing construction is subject to many [[LINK_START, https://www.planetizen.com/features/117584-four-low-hanging-fruit-zoning-reforms]] burdensome restrictions[[LINK_END]], such as off-street parking mandates, minimum lot size restrictions, and floor-area ratio requirements - all of which arbitrarily reduce the number of housing projects which are viable, and [[LINK_START, https://www.planning.org/planning/2022/spring/a-business-case-for-dropping-parking-minimums/]]increase the costs[[LINK_END]] of those that are.",
+
   "solution-regulations-text-p2": "We support joining with the [[LINK_START, https://parkingreform.org/resources/mandates-map/]]many peer cities[[LINK_END]] which have begun to do away with these regulations.",
+
   "solution-section-8-text-p1": "Unlike with SNAP, Medicaid, and other ‘entitlement’ programs, [[LINK_START, https://www.vox.com/2014/5/31/5764262/76-percent-of-people-who-qualify-for-housing-aid-dont-get-it]]only about 25%[[LINK_END]] of those who qualify for housing assistance receive it. The remaining 75% are housing insecure.",
+
   "solution-section-8-text-p2": "We believe housing is a basic right and support [[LINK_START, https://www.vox.com/2020/7/9/21316912/joe-biden-housing-plan-section-8]]increased funding for Section 8[[LINK_END]] so anyone who qualifies can receive benefits. Locally, we support effective data-driven practices for reaching [[LINK_START, https://community.solutions/built-for-zero/functional-zero/]]functional-zero[[LINK_END]] homelessness, like the Community Solutions [[LINK_START, https://community.solutions/quality-by-name-data/]]by-name data[[LINK_END]] methodology.",
+
   "get-involved-text": "Join our mailing list to hear about specific, actionable ways to further the housing abundance agenda. You'll be notified about upcoming meetings and events and be invited to join the Pro-Housing Pittsburgh Slack, where you can talk directly with other members about our work."
+
 }
