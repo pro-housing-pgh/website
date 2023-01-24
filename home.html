@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Page title, text displayed in browser tab-->
+    <title>Pro-Housing PGH</title>
+
+    <!-- Metadata-->
+    <meta charset="UTF-8">
+
+    <!-- Load fonts from Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet">
+
+    <!-- Load JQuery from Google hosted libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <!-- Custom Javascript, implements event handlers, animation, etc. -->
+    <script src="js/script.js"></script>
+
+    <!-- Load CSS stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- First page section, contains logo/nav bar and intro text -->
+    <div id="section-intro" class="page-section">
+
+        <!-- Wrap contents in a div so we can overlay things on image properly -->
+        <div id="intro-section-wrapper">
+
+            <!-- Background image for intro section -->
+            <img id="intro-background-img" src="img/intro_background.png">
+
+            <!-- Logo -->
+            <img id="logo-img" src="img/logo/logo_header.svg">
+
+            <div id="nav-bar">
+
+                <a id="nav-link-solutions" class="nav-link">Solutions</a>
+                <a id="nav-link-get-involved" class="nav-link">Get Involved</a>
+
+            </div>
+
+            <div id="intro-blurb-text"><span class="intro-text-shadow">Advocating for abundant, affordable housing in the Pittsburgh region</span></div>
+
+        </div>
+
+    </div>
+
+    <!-- Third page section, contains info about "Out Solutions" -->
+    <div id="section-solutions" class="page-section">
+
+        <!-- Title for 'Our Solutions' section-->
+        <div class="section-xx-title-wrapper">
+            <h1>Our Solutions</h1>
+        </div>
+
+        <!-- Content for 'Problem' section-->
+        <div id="section-solutions-content">
+
+            <!-- "Housing Abundance" solution vertical -->
+            <div id="solutions-abundance-vertical" class="solutions-card-wrapper">
+
+                <!-- Cards for individual affordable housing solutions -->
+                <div class="solutions-card">
+
+                    <div class="solutions-card-content">
+
+                        <div class="card-img-wrapper">
+                            <img class="card-img" src="img/zoning_artwork.png">
+                            <h3 id="card-header-1" class="card-header">Legal Housing</h3>
+                        </div>
+
+                        <div class="card-text">
+                            <p>In much of Pittsburgh, zoning makes it illegal to build anything but the lowest-density housing. Desirable locations near public transit and neighborhood centers are especially under-zoned, stifling business and inflating housing prices by preventing supply from meeting demand.</p>
+                            <p>We support zoning reforms such as <span class="emphasized-text"><a href="https://www.tandfonline.com/doi/full/10.1080/01944363.2019.1651216" target="_blank">eliminating single-family zoning</a></span> city-wide and allowing taller and denser <span class="emphasized-text"><a href="https://nlihc.org/resource/california-passes-bill-streamline-affordable-housing-production-commercial-zones" target="_blank">housing in commercial areas</a></span> and near transit hubs.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="solutions-card-bottom-border"></div>
+
+                </div>
+
+                <div class="solutions-card">
+
+                    <div class="solutions-card-content">
+
+                        <div class="card-img-wrapper">
+                            <img class="card-img" src="img/hearing_artwork.png">
+                            <h3 id="card-header-2" class="card-header">Fast Permitting</h3>
+                        </div>
+
+                        <div class="card-text">
+                            <p>Virtually all major housing projects run a gauntlet of hearings, reviews, and community meetings, which lengthen timelines and give veto power to the <span class="emphasized-text"><a href="https://www.theatlantic.com/ideas/archive/2022/04/local-government-community-input-housing-public-transportation/629625/" target="_blank">loudest, angriest voices</a></span>. These delays reduce the housing that gets built and increase the cost of the housing that is.</p>
+                            <p>We support changes that <span class="emphasized-text"><a href="https://nhc.org/policy-guide/expedited-permitting-and-review-the-basics/expedited-permitting-and-review-policies-encourage-affordable-development/" target="_blank">streamline permitting</a></span> and diminish the power of anti-democratic special interests to slow development.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="solutions-card-bottom-border"></div>
+
+                </div>
+
+                <div class="solutions-card">
+
+                    <div class="solutions-card-content">
+
+                        <div class="card-img-wrapper">
+                            <img class="card-img" src="img/parking_artwork.png">
+                            <h3 id="card-header-3" class="card-header">Eliminate Barriers</h3>
+                        </div>
+
+                        <div class="card-text">
+                            <p>Housing construction is subject to many <span class="emphasized-text"><a href="https://www.planetizen.com/features/117584-four-low-hanging-fruit-zoning-reforms" target="_blank"> burdensome restrictions</a></span>, such as off-street parking mandates, minimum lot size restrictions, and floor-area ratio requirements - all of which arbitrarily reduce the number of housing projects which are viable, and <span class="emphasized-text"><a href="https://www.planning.org/planning/2022/spring/a-business-case-for-dropping-parking-minimums/" target="_blank">increase the costs</a></span> of those that are.</p>
+                            <p>We support joining with the <span class="emphasized-text"><a href="https://parkingreform.org/resources/mandates-map/" target="_blank">many peer cities</a></span> which have begun to do away with these regulations.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="solutions-card-bottom-border"></div>
+
+                </div>
+
+                <!-- Cards for individual affordable housing solutions -->
+                <div class="solutions-card">
+
+                    <div class="solutions-card-content">
+
+                        <div class="card-img-wrapper">
+                            <img class="card-img" src="img/homeless_artwork.png">
+                            <h3 id="card-header-4" class="card-header">A Right to Housing</h3>
+                        </div>
+
+                        <div class="card-text">
+                            <p>Unlike with SNAP, Medicaid, and other ‘entitlement’ programs, <span class="emphasized-text"><a href="https://www.vox.com/2014/5/31/5764262/76-percent-of-people-who-qualify-for-housing-aid-dont-get-it" target="_blank">only about 25%</a></span> of those who qualify for housing assistance receive it. The remaining 75% are housing insecure.</p>
+                            <p>We believe housing is a basic right and support <span class="emphasized-text"><a href="https://www.vox.com/2020/7/9/21316912/joe-biden-housing-plan-section-8" target="_blank">increased funding for Section 8</a></span> so anyone who qualifies can receive benefits. Locally, we support effective data-driven practices for reaching <span class="emphasized-text"><a href="https://community.solutions/built-for-zero/functional-zero/" target="_blank">functional-zero</a></span> homelessness, like the Community Solutions <span class="emphasized-text"><a href="https://community.solutions/quality-by-name-data/" target="_blank">by-name data</a></span> methodology.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="solutions-card-bottom-border"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Mid-screen image to break up page -->
+    <div class="page-section img-parallax-wrapper">
+    </div>
+
+    <!-- Fourth page section, contains info about how to "Get Involved" -->
+    <div id="section-get-involved" class="page-section">
+
+        <!-- Title for 'Our Solutions' section-->
+        <div class="section-xx-title-wrapper">
+            <h1>Join Us!</h1>
+        </div>
+
+        <!-- Mailchimp signup form START -->
+        <div id="get-involved-content">
+
+            <div id="get-involved-text">
+                Join our mailing list to hear about specific, actionable ways to further the housing abundance agenda. You'll be notified about upcoming meetings and events and be invited to join the Pro-Housing Pittsburgh Slack, where you can talk directly with other members about our work.
+            </div>
+
+            <!-- Form containing name and email entry boxes -->
+            <form action="https://gmail.us21.list-manage.com/subscribe/post?u=270a55081df7a0a743f681827&amp;id=89d2622dd1&amp;f_id=00e0d3e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+                <!-- Div wrapper for form elements so we can format them nicely-->
+                <div id="mc-signup-form-wrapper">
+
+                    <!-- First name entry box -->
+                    <div class="mc-field-group">
+                        <label for="mce-FNAME">First:</label>
+                        <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+                        <span id="mce-FNAME-HELPERTEXT" class="helper_text"></span>
+                    </div>
+
+                    <!-- Last name entry box -->
+                    <div class="mc-field-group">
+                        <label for="mce-LNAME">Last:</label>
+                        <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+                        <span id="mce-LNAME-HELPERTEXT" class="helper_text"></span>
+                    </div>
+
+                    <!-- Email entry box -->
+                    <div class="mc-field-group">
+                        <label for="mce-EMAIL">Email:*</label>
+                        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
+                        <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
+                    </div>
+
+                    <div id="mce-responses" class="clear foot">
+                        <div class="response" id="mce-error-response" style="display:none"></div>
+                        <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>
+
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_270a55081df7a0a743f681827_89d2622dd1" tabindex="-1" value=""></div>
+
+                    <!-- 'Subscribe' button -->
+                    <div class="optionalParent">
+                        <div class="clear foot">
+                            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                        </div>
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+
+        <!-- Mailchimp-provided script for validating form contents-->
+        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+
+        <!--Mailchimp signup form END -->
+
+    </div>
+
+    <!-- Footer section, contains links, info, addresses, etc. -->
+    <div id="section-footer" class="page-section">
+
+        <div id="footer-contents">
+
+            <img id="logo-footer" src="img/logo/logo_black.svg">
+
+            <!-- 'About' vertical -->
+            <div class="footer-vertical">
+                <h1 class="footer-vertical-heading">About</h1>
+                <a href="https://yimbyaction.org/2021/" target="_blank">YIMBY Action</a>
+            </div>
+
+            <!-- 'Learn' vertical -->
+            <div class="footer-vertical">
+                <h1 class="footer-vertical-heading">Learn</h1>
+                <a href="https://yimbyaction.org/2021/top-resources/">Top Resources</a>
+            </div>
+
+            <!-- 'Social' vertical -->
+            <div class="footer-vertical">
+                <h1 class="footer-vertical-heading">Social</h1>
+                <a href="https://twitter.com/ProHousingPgh" target="_blank">Twitter</a>
+            </div>
+
+            <!-- 'Contact' vertical -->
+            <div class="footer-vertical">
+                <h1 class="footer-vertical-heading">Contact</h1>
+                <a href="mailto:prohousingpgh@gmail.com">Email</a>
+            </div>
+
+        </div>
+
+        <div id="copyright-section">
+            <div id="copyright-text-wrapper">
+                <span>&copy; 2023 Pro-Housing Pittsburgh, a 501(c)(4) nonprofit organization</span>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+</html>
