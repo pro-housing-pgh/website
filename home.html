@@ -3,8 +3,11 @@
 
 <head>
 
-    <meta charset="UTF-8">
+    <!-- Page title, text displayed in browser tab-->
     <title>Pro-Housing PGH</title>
+
+    <!-- Metadata-->
+    <meta charset="UTF-8">
 
     <!-- Load fonts from Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,64 +17,11 @@
     <!-- Load JQuery from Google hosted libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
+    <!-- Custom Javascript, implements event handlers, animation, etc. -->
+    <script src="js/script.js"></script>
+
     <!-- Load CSS stylesheet -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
-
-    <script>
-
-        $(document).ready(function() {
-
-            // Auto scroll to solutions section when link clicked
-            $("#nav-link-solutions").click(function() {
-                $("body,html").animate({
-                    scrollTop : $("#section-solutions").offset().top
-                }, 400);
-            });
-
-            // Auto scroll to get involved section when link clicked
-            $("#nav-link-get-involved").click(function() {
-                $("body,html").animate({
-                    scrollTop : $("#section-get-involved").offset().top
-                }, 1000);
-            });
-
-            // When we reach the solutions section the first time, fade in the boxes
-            var fadeIn = false;
-
-            // When we hover over one of the solution boxes, update the colors
-            $(".solutions-card").hover(
-                function() {
-                    $(this).find(".solutions-card-content").addClass("active");
-                    $(this).find(".card-header").addClass("active");
-                    $(this).find(".emphasized-text").addClass("active");
-                    $(this).find(".solutions-card-bottom-border").addClass("active");
-
-                    $(this).find(".solutions-card-bottom-border").stop().css(
-                        "background", "darkgreen"
-                    ).css("border-color", "darkgreen").animate({
-                        width:'100%'
-                    }, "fast", "swing");
-
-                }, function() {
-                    $(".active").removeClass("active")
-                    $(this).find(".solutions-card-bottom-border").css(
-                        "background", "darkslateblue"
-                    ).css(
-                        "border-color", "darkslateblue"
-                    ).animate(
-                        {
-                            width:'2%'
-                        }, "fast", "swing", function() {
-                            $(this).css("background", "transparent").css("border-color", "transparent");
-                        }
-                    );
-                }
-            );
-
-
-        });
-
-    </script>
 
 </head>
 
