@@ -100,7 +100,7 @@ function populateBlurbs() {
 
     // Fetch blurb text from the server
     let prefix = window.location.hostname === "localhost" ? "" : window.location.href;
-    $.getJSON("/data/blurbs.json", function(data) {
+    $.getJSON(prefix + "data/blurbs.json", function(data) {
 
         // Iterate over keys (correspond to ids in html
         for (const id in data) {
@@ -140,7 +140,7 @@ function populateFooter() {
 
     // Fetch footer headings and links from server
     let prefix = window.location.hostname === "localhost" ? "" : window.location.href;
-    $.getJSON(prefix + "/data/footer.json", function(data) {
+    $.getJSON(prefix + "data/footer.json", function(data) {
 
         // Iterate over headings
         for (const heading in data) {
