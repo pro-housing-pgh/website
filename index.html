@@ -27,7 +27,7 @@
 
 <body>
 
-    <!-- First page section, contains logo/nav bar and intro text -->
+    <!-- Intro section, contains logo/nav bar and intro text -->
     <div id="section-intro" class="page-section">
 
         <!-- Wrap contents in a div so we can overlay things on image properly -->
@@ -39,6 +39,7 @@
             <!-- Logo -->
             <img id="logo-img" src="img/logo/logo_header.svg">
 
+            <!-- Navigation buttons to jump to different sections -->
             <div id="nav-bar">
 
                 <a id="nav-link-solutions" class="nav-link">Solutions</a>
@@ -46,24 +47,25 @@
 
             </div>
 
-            <div id="intro-blurb-text"><span class="intro-text-shadow">Advocating for abundant, affordable housing in the Pittsburgh region</span></div>
+            <!-- Intro text blurb -->
+            <div id="intro-text-wrapper"><span id="intro-text-blurb"></span></div>
 
         </div>
 
     </div>
 
-    <!-- Third page section, contains info about "Out Solutions" -->
+    <!-- "Our Solutions" section -->
     <div id="section-solutions" class="page-section">
 
-        <!-- Title for 'Our Solutions' section-->
+        <!-- Section title -->
         <div class="section-xx-title-wrapper">
-            <h1>Our Solutions</h1>
+            <h1 class="section-title">Our Solutions</h1>
         </div>
 
-        <!-- Content for 'Problem' section-->
+        <!-- Section contents -->
         <div id="section-solutions-content">
 
-            <!-- "Housing Abundance" solution vertical -->
+            <!-- Wrapper for solution cards -->
             <div id="solutions-abundance-vertical" class="solutions-card-wrapper">
 
                 <!-- Cards for individual affordable housing solutions -->
@@ -77,8 +79,8 @@
                         </div>
 
                         <div class="card-text">
-                            <p>In much of Pittsburgh, zoning makes it illegal to build anything but the lowest-density housing. Desirable locations near public transit and neighborhood centers are especially under-zoned, stifling business and inflating housing prices by preventing supply from meeting demand.</p>
-                            <p>We support zoning reforms such as <span class="emphasized-text"><a href="https://www.tandfonline.com/doi/full/10.1080/01944363.2019.1651216" target="_blank">eliminating single-family zoning</a></span> city-wide and allowing taller and denser <span class="emphasized-text"><a href="https://nlihc.org/resource/california-passes-bill-streamline-affordable-housing-production-commercial-zones" target="_blank">housing in commercial areas</a></span> and near transit hubs.</p>
+                            <p id="solution-zoning-text-p1"></p>
+                            <p id="solution-zoning-text-p2"></p>
                         </div>
 
                     </div>
@@ -97,8 +99,8 @@
                         </div>
 
                         <div class="card-text">
-                            <p>Virtually all major housing projects run a gauntlet of hearings, reviews, and community meetings, which lengthen timelines and give veto power to the <span class="emphasized-text"><a href="https://www.theatlantic.com/ideas/archive/2022/04/local-government-community-input-housing-public-transportation/629625/" target="_blank">loudest, angriest voices</a></span>. These delays reduce the housing that gets built and increase the cost of the housing that is.</p>
-                            <p>We support changes that <span class="emphasized-text"><a href="https://nhc.org/policy-guide/expedited-permitting-and-review-the-basics/expedited-permitting-and-review-policies-encourage-affordable-development/" target="_blank">streamline permitting</a></span> and diminish the power of anti-democratic special interests to slow development.</p>
+                            <p id="solution-permitting-text-p1"></p>
+                            <p id="solution-permitting-text-p2"></p>
                         </div>
 
                     </div>
@@ -117,8 +119,8 @@
                         </div>
 
                         <div class="card-text">
-                            <p>Housing construction is subject to many <span class="emphasized-text"><a href="https://www.planetizen.com/features/117584-four-low-hanging-fruit-zoning-reforms" target="_blank"> burdensome restrictions</a></span>, such as off-street parking mandates, minimum lot size restrictions, and floor-area ratio requirements - all of which arbitrarily reduce the number of housing projects which are viable, and <span class="emphasized-text"><a href="https://www.planning.org/planning/2022/spring/a-business-case-for-dropping-parking-minimums/" target="_blank">increase the costs</a></span> of those that are.</p>
-                            <p>We support joining with the <span class="emphasized-text"><a href="https://parkingreform.org/resources/mandates-map/" target="_blank">many peer cities</a></span> which have begun to do away with these regulations.</p>
+                            <p id="solution-regulations-text-p1"></p>
+                            <p id="solution-regulations-text-p2"></p>
                         </div>
 
                     </div>
@@ -138,8 +140,8 @@
                         </div>
 
                         <div class="card-text">
-                            <p>Unlike with SNAP, Medicaid, and other ‘entitlement’ programs, <span class="emphasized-text"><a href="https://www.vox.com/2014/5/31/5764262/76-percent-of-people-who-qualify-for-housing-aid-dont-get-it" target="_blank">only about 25%</a></span> of those who qualify for housing assistance receive it. The remaining 75% are housing insecure.</p>
-                            <p>We believe housing is a basic right and support <span class="emphasized-text"><a href="https://www.vox.com/2020/7/9/21316912/joe-biden-housing-plan-section-8" target="_blank">increased funding for Section 8</a></span> so anyone who qualifies can receive benefits. Locally, we support effective data-driven practices for reaching <span class="emphasized-text"><a href="https://community.solutions/built-for-zero/functional-zero/" target="_blank">functional-zero</a></span> homelessness, like the Community Solutions <span class="emphasized-text"><a href="https://community.solutions/quality-by-name-data/" target="_blank">by-name data</a></span> methodology.</p>
+                            <p id="solution-section-8-text-p1"></p>
+                            <p id="solution-section-8-text-p2"></p>
                         </div>
 
                     </div>
@@ -158,20 +160,19 @@
     <div class="page-section img-parallax-wrapper">
     </div>
 
-    <!-- Fourth page section, contains info about how to "Get Involved" -->
+    <!-- "Get Involved" section -->
     <div id="section-get-involved" class="page-section">
 
-        <!-- Title for 'Our Solutions' section-->
+        <!-- Section title -->
         <div class="section-xx-title-wrapper">
-            <h1>Join Us!</h1>
+            <h1 class="section-title">Join Us!</h1>
         </div>
 
-        <!-- Mailchimp signup form START -->
+        <!-- Mailchimp signup form - mostly copied from what mailchimp provided, -->
+        <!-- with a few things removed / rearranged (and replaced css of course) -->
         <div id="get-involved-content">
 
-            <div id="get-involved-text">
-                Join our mailing list to hear about specific, actionable ways to further the housing abundance agenda. You'll be notified about upcoming meetings and events and be invited to join the Pro-Housing Pittsburgh Slack, where you can talk directly with other members about our work.
-            </div>
+            <div id="get-involved-text"></div>
 
             <!-- Form containing name and email entry boxes -->
             <form action="https://gmail.us21.list-manage.com/subscribe/post?u=270a55081df7a0a743f681827&amp;id=89d2622dd1&amp;f_id=00e0d3e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>

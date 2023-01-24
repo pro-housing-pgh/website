@@ -1,8 +1,16 @@
 
+// Object to store text blurbs in once we grab them from
+// the server
+let blurbs = {};
+
+
 /**
  * This function is called when the page finishes loading
  */
 $(document).ready(function() {
+
+    // Fetch text blurbs from the server and populate elements from the data
+    populateBlurbs();
 
     // Handlers for scrolling to the corresponding page section when
     // one of the nav buttons is clicked
@@ -48,6 +56,7 @@ function handleCardHoverIn() {
     // Add 'active' class to relevant elements to update colors and emphasis
     $(this).find(".solutions-card-content").addClass("active");
     $(this).find(".card-header").addClass("active");
+    $(this).find(".card-text-citation").addClass("active");
     $(this).find(".emphasized-text").addClass("active");
     $(this).find(".solutions-card-bottom-border").addClass("active");
 
@@ -80,4 +89,45 @@ function handleCardHoverOut() {
         });
 
 
+}
+
+
+/**
+ * This method fetches a JSON object containing all the text blurbs for populating
+ * various elements on the page. It retrieves the JSON, parses any special markers
+ * in the contents (e.g. creating links embedded in the text), and updates the
+ * appropriate elements on the page.
+ */
+function populateBlurbs() {
+
+    // Fetch blurb text from the server
+    $.getJSON("/data/blurbs.json", function(data) {
+
+        // Iterate over keys (correspond to ids in html
+        for (const id in data) {
+
+            // Get the text that should fill the specified tag
+            let text = data[id];
+
+            // Check for any links and replace them with <a> tags
+            while (text.indexOf("[[LINK_START, ") !== -1) {
+
+                // Extract link url
+                let linkStart = text.indexOf("[[LINK_START, ");
+                let linkEnd = text.indexOf("]]");
+                let linkUrl = text.substring(linkStart + 14, linkEnd);
+
+                // Replace the link markers with <a> tags
+                let startTag = "<a href='" + linkUrl + "' target='_blank' class='card-text-citation'>"
+                text = text.replace("[[LINK_START, " + linkUrl + "]]", startTag);
+                text = text.replace("[[LINK_END]]", "</a>");
+
+            }
+
+            // Update the html contents for the specified id
+            $("#" + id).html(text);
+
+        }
+
+    });
 }
