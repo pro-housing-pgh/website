@@ -1,8 +1,4 @@
 
-// Object to store text blurbs in once we grab them from
-// the server
-let blurbs = {};
-
 
 /**
  * This function is called when the page finishes loading
@@ -11,6 +7,9 @@ $(document).ready(function() {
 
     // Fetch text blurbs from the server and populate elements from the data
     populateBlurbs();
+
+    // Fetch footer links from server and assemble footer
+    populateFooter();
 
     // Handlers for scrolling to the corresponding page section when
     // one of the nav buttons is clicked
@@ -57,7 +56,6 @@ function handleCardHoverIn() {
     $(this).find(".solutions-card-content").addClass("active");
     $(this).find(".card-header").addClass("active");
     $(this).find(".card-text-citation").addClass("active");
-    $(this).find(".emphasized-text").addClass("active");
     $(this).find(".solutions-card-bottom-border").addClass("active");
 
     // Animate the bottom border of the card, shading from left to right
@@ -128,6 +126,37 @@ function populateBlurbs() {
             $("#" + id).html(text);
 
         }
-
     });
+
+}
+
+
+/**
+ * This method fetches a JSON object containing the footer headings and links from
+ * the server, and assembles the footer accordingly.
+ */
+function populateFooter() {
+
+    // Fetch footer headings and links from server
+    $.getJSON("/data/footer.json", function(data) {
+
+        // Iterate over headings
+        for (const heading in data) {
+
+            // Add a new vertical for each heading, create the heading inside it
+            let section = $("<div>").addClass("footer-vertical");
+            section.append($("<h1>").addClass("footer-vertical-heading").html(heading));
+
+            // Add the list of links under the heading
+            for (const link in data[heading]) {
+                let linkTag = $("<a>").attr("href", data[heading][link]).attr("target", "_blank").html(link);
+                section.append(linkTag)
+            }
+
+            // Add the heading and links to the page
+            $("#footer-contents").append(section);
+
+        }
+    });
+
 }

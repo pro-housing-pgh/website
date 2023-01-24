@@ -225,11 +225,6 @@ a:hover {
     color: darkgreen;
 }
 
-.emphasized-text.active {
-    text-decoration: underline;
-    color: darkgreen;
-}
-
 #get-involved-content {
     display: flex;
     flex-direction: column;
@@ -344,14 +339,6 @@ a:hover {
 
 #copyright-text-wrapper a:hover {
     border-bottom: 1px solid;
-}
-
-.section-xx-footer {
-    width: 100%;
-    margin-top: 75px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .img-parallax-wrapper {
