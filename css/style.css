@@ -128,6 +128,7 @@ a:hover {
 #intro-text-wrapper {
     width: 40%;
     min-width: 400px;
+    max-width: 625px;
     position: absolute;
     left: 10%;
     bottom: 25%;
@@ -135,8 +136,8 @@ a:hover {
 
 #intro-text-blurb {
     background: rgba(16,88,81, 0.7);
-    font-size: 1.7rem;
-    line-height: 30px;
+    font-size: 1.8rem;
+    line-height: 33px;
 }
 
 /* ------------------------------------ */
@@ -282,6 +283,7 @@ a:hover {
     text-align: center;
     width: 50%;
     font-size: 1.3rem;
+    line-height: 23pt;
 }
 
 
@@ -416,5 +418,5 @@ a:hover {
 
     /* ---  FOOTER section  ---------------- */
 
-    
+
 }

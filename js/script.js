@@ -99,6 +99,7 @@ function handleCardHoverOut() {
 function populateBlurbs() {
 
     // Fetch blurb text from the server
+    let prefix = window.location.hostname === "localhost" ? "" : window.location.href;
     $.getJSON("/data/blurbs.json", function(data) {
 
         // Iterate over keys (correspond to ids in html
@@ -138,7 +139,8 @@ function populateBlurbs() {
 function populateFooter() {
 
     // Fetch footer headings and links from server
-    $.getJSON("/data/footer.json", function(data) {
+    let prefix = window.location.hostname === "localhost" ? "" : window.location.href;
+    $.getJSON(prefix + "/data/footer.json", function(data) {
 
         // Iterate over headings
         for (const heading in data) {
