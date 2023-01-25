@@ -31,17 +31,12 @@ body::-webkit-scrollbar {
 
 a {
     text-decoration: none;
-    border: 2px solid transparent;
     cursor: pointer;
+    color: inherit;
 }
 
 a:link, a:visited, a:active {
     color: inherit;
-}
-
-a:hover {
-    border-bottom-color: inherit;
-    border-bottom: 2px solid;
 }
 
 
@@ -122,6 +117,15 @@ a:hover {
     position: absolute;
     top: 40px;
     right: 50px;
+}
+
+.nav-link {
+    border: 2px solid transparent;
+}
+
+.nav-link:hover {
+    border-bottom-color: inherit;
+    border-bottom: 2px solid;
 }
 
 #section-intro a {
@@ -445,6 +449,11 @@ div.mce_inline_error {
         width: unset;
         padding: 10px 30px;
     }
+
+    .card-text-citation {
+        text-decoration: underline;
+    }
+
 
     /* ---  Parallax image section  ------- */
 

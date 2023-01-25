@@ -1,5 +1,4 @@
 
-
 /**
  * This function is called when the page finishes loading
  */
