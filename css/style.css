@@ -105,8 +105,8 @@ a:link, a:visited, a:active {
     min-width: 150px;
     max-width: 225px;
     position: absolute;
-    top: 15px;
-    left: 5px;
+    top: 25px;
+    left: 25px;
 }
 
 #nav-bar {
@@ -116,21 +116,19 @@ a:link, a:visited, a:active {
     justify-content: space-between;
     position: absolute;
     top: 40px;
-    right: 50px;
+    right: 5%;
+    width: 11%;
+    min-width: 190px;
 }
 
 .nav-link {
     border: 2px solid transparent;
+    font-size: 1.1rem;
 }
 
 .nav-link:hover {
     border-bottom-color: inherit;
     border-bottom: 2px solid;
-}
-
-#section-intro a {
-    font-size: 0.9rem;
-    margin: 0 10px;
 }
 
 #intro-text-wrapper {
