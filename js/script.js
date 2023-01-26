@@ -146,7 +146,7 @@ function populateFooter() {
 
             // Add a new vertical for each heading, create the heading inside it
             let section = $("<div>").addClass("footer-vertical");
-            section.append($("<h1>").addClass("footer-vertical-heading").html(heading));
+            section.append($("<h2>").addClass("footer-vertical-heading").html(heading));
 
             // Add the list of links under the heading
             for (const link in data[heading]) {

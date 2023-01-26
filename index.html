@@ -4,27 +4,35 @@
 <head>
 
     <!-- Page title, text displayed in browser tab-->
-    <title>Pro-Housing PGH</title>
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title>Pro-Housing PGH - Abundant, Affordable Housing</title>
 
     <!-- Metadata-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pro-Housing Pittsburgh is a nonprofit that advocates for affordable housing in the Pittsburgh region. It pursues policy changes at the local and state level to lower barriers to housing construction and provide housing assistance to low-income families. This page provides an overview of PHP's proposed policy solutions and includes a form to register for the group's mailing list. PHP is affiliated with YIMBY Action.">
 
-    <!-- Load fonts from Google fonts -->
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Pro-Housing PGH">
+    <meta property="og:description" content="Advocating for abundant, affordable housing in the Pittsburgh region">
+    <meta property="og:url" content="https://prohousingpgh.org">
+    <meta property="og:image" content="https://pro-housing-pgh.github.io/website/img/card_thumbnail.png">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Fonts (loaded from Google fonts) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet">
 
-    <!-- Load JQuery from Google hosted libraries -->
+    <!-- JQuery (loaded from Google hosted libraries) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
     <!-- Custom Javascript, implements event handlers, animation, etc. -->
     <script src="js/script.js"></script>
 
-    <!-- Load CSS stylesheet -->
+    <!-- CSS stylesheet -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
@@ -38,10 +46,10 @@
         <div id="intro-section-wrapper">
 
             <!-- Background image for intro section -->
-            <img id="intro-background-img" src="img/intro_background.png">
+            <img id="intro-background-img" src="img/intro_background.png" alt="Artistic depiction of a Pittsburgh neighborhood, viewed from above">
 
             <!-- Logo -->
-            <img id="logo-img" src="img/logo/logo_white.png">
+            <img id="logo-img" src="img/logo/logo_white.png" alt="Pro-Housing Pittsburgh logo">
 
             <!-- Navigation buttons to jump to different sections -->
             <div id="nav-bar">
@@ -78,8 +86,8 @@
                     <div class="solutions-card-content">
 
                         <div class="card-img-wrapper">
-                            <img class="card-img" src="img/zoning_artwork.png">
-                            <h3 id="card-header-1" class="card-header">Legal Housing</h3>
+                            <img class="card-img" src="img/zoning_artwork.png" alt="Black-and-white, sketched map of Pittsburgh zoning boundaries">
+                            <h2 id="card-header-1" class="card-header">Legal Housing</h2>
                         </div>
 
                         <div class="card-text">
@@ -98,8 +106,8 @@
                     <div class="solutions-card-content">
 
                         <div class="card-img-wrapper">
-                            <img class="card-img" src="img/hearing_artwork.png">
-                            <h3 id="card-header-2" class="card-header">Fast Permitting</h3>
+                            <img class="card-img" src="img/hearing_artwork.png" alt="Black-and-white, sketched image of an angry man speaking at a public hearing">
+                            <h2 id="card-header-2" class="card-header">Fast Permitting</h2>
                         </div>
 
                         <div class="card-text">
@@ -118,8 +126,8 @@
                     <div class="solutions-card-content">
 
                         <div class="card-img-wrapper">
-                            <img class="card-img" src="img/parking_artwork.png">
-                            <h3 id="card-header-3" class="card-header">Fewer Barriers</h3>
+                            <img class="card-img" src="img/parking_artwork.png" alt="Black-and-white, sketched image of a half-empty parking lot, viewed from above">
+                            <h2 id="card-header-3" class="card-header">Fewer Barriers</h2>
                         </div>
 
                         <div class="card-text">
@@ -139,8 +147,8 @@
                     <div class="solutions-card-content">
 
                         <div class="card-img-wrapper">
-                            <img class="card-img" src="img/homeless_artwork.png">
-                            <h3 id="card-header-4" class="card-header">A Right to Housing</h3>
+                            <img class="card-img" src="img/homeless_artwork.png" alt="Black-and-white, sketched image of a homeless encampment">
+                            <h2 id="card-header-4" class="card-header">A Right to Housing</h2>
                         </div>
 
                         <div class="card-text">
@@ -232,7 +240,7 @@
         <!--Mailchimp signup form END -->
 
     </div>
-    
+
     <!--End mc_embed_signup-->
 
     <!-- Footer section, contains links, info, addresses, etc. -->
@@ -241,7 +249,7 @@
         <div id="footer-contents">
 
             <!-- Logo on the left side of the footer -->
-            <img id="logo-footer" src="img/logo/logo_black.png">
+            <img id="logo-footer" src="img/logo/logo_black.png" alt="Pro-Housing Pittsburgh logo">
 
             <!-- Footer links are populated from JSON data and assembled with JS code -->
             <!-- They should be appended below here -->
