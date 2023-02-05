@@ -455,6 +455,9 @@ div.mce_inline_error {
 
     /* ---  Parallax image section  ------- */
 
+    .img-parallax-wrapper {
+        background-attachment: unset;
+    }
 
     /* ---  GET INVOLVED section  --------- */
 
