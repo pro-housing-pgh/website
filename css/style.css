@@ -1,538 +1,523 @@
-
 /* ------------------------------ */
 /* ---  VARIABLES  -------------- */
 /* ------------------------------ */
 
 :root {
-    --color-primary: rgb(20, 20, 30);
-    --color-secondary: rgb(225, 225, 225);
-    --bg-color-card: rgb(240, 240, 240);
-    --font-color-on-dark: white;
-    --font-color-on-light: black;
+  --color-primary: rgb(20, 20, 30);
+  --color-secondary: rgb(225, 225, 225);
+  --bg-color-card: rgb(240, 240, 240);
+  --font-color-on-dark: white;
+  --font-color-on-light: black;
 }
-
 
 /* ------------------------------ */
 /* ---  Generic tag styling  ---- */
 /* ------------------------------ */
 
-
 html {
-    font-family: "Josefin Sans", "sans-serif";
+  font-family: "Josefin Sans", "sans-serif";
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 body::-webkit-scrollbar {
-    display: none;  /* Safari and Chrome */
+  display: none; /* Safari and Chrome */
 }
 
 a {
-    text-decoration: none;
-    cursor: pointer;
-    color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
 }
 
-a:link, a:visited, a:active {
-    color: inherit;
+a:link,
+a:visited,
+a:active {
+  color: inherit;
 }
-
 
 /* -------------------------------------- */
 /* ---  Basic page structure, layout  --- */
 /* -------------------------------------- */
 
-
 .page-section {
-    width: 100%;
-    padding: 150px 0;
+  width: 100%;
+  padding: 150px 0;
 }
 
 #section-intro {
-    background-color: var(--color-primary);
-    color: var(--font-color-on-dark);
-    padding: 0;
+  background-color: var(--color-primary);
+  color: var(--font-color-on-dark);
+  padding: 0;
 }
 
 #section-solutions {
-    background-color: var(--color-secondary);
-    color: var(--font-color-on-light);
+  background-color: var(--color-secondary);
+  color: var(--font-color-on-light);
 }
 
 #section-get-involved {
-    background-color: var(--color-primary);
-    color: var(--font-color-on-dark);
+  background-color: var(--color-primary);
+  color: var(--font-color-on-dark);
+}
+
+#section-get-involved.subscribe-page {
+  height: 100%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 #section-footer {
-    background-color: var(--color-secondary);
-    color: var(--font-color-on-light);
-    padding: 75px 0 25px 0;
+  background-color: var(--color-secondary);
+  color: var(--font-color-on-light);
+  padding: 75px 0 25px 0;
 }
 
 .section-xx-title-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .section-title {
-    font-size: 3.0rem;
+  font-size: 3rem;
 }
-
 
 /* ------------------------------------ */
 /* ---  INTRO section  ---------------- */
 /* ------------------------------------ */
 
-
 #intro-section-wrapper {
-    position: relative;
+  position: relative;
 }
 
 #intro-background-img {
-    display: block;
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
 }
 
 #logo-img {
-    width: 20%;
-    min-width: 150px;
-    max-width: 225px;
-    position: absolute;
-    top: 25px;
-    left: 25px;
+  width: 20%;
+  min-width: 150px;
+  max-width: 225px;
+  position: absolute;
+  top: 25px;
+  left: 25px;
 }
 
 #nav-bar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    position: absolute;
-    top: 40px;
-    right: 5%;
-    width: 11%;
-    min-width: 190px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 40px;
+  right: 5%;
+  width: 11%;
+  min-width: 190px;
 }
 
 .nav-link {
-    border: 2px solid transparent;
-    font-size: 1.1rem;
+  border: 2px solid transparent;
+  font-size: 1.1rem;
 }
 
 .nav-link:hover {
-    border-bottom-color: inherit;
-    border-bottom: 2px solid;
+  border-bottom-color: inherit;
+  border-bottom: 2px solid;
 }
 
 #intro-text-wrapper {
-    width: 40%;
-    min-width: 600px;
-    position: absolute;
-    left: 10%;
-    bottom: 25%;
+  width: 40%;
+  min-width: 600px;
+  position: absolute;
+  left: 10%;
+  bottom: 25%;
 }
 
 #intro-text-blurb {
-    background: rgba(16,88,81, 0.7);
-    font-size: 1.8rem;
-    line-height: 33px;
+  background: rgba(16, 88, 81, 0.7);
+  font-size: 1.8rem;
+  line-height: 33px;
 }
 
 /* ------------------------------------ */
 /* ---  SOLUTIONS section  ------------ */
 /* ------------------------------------ */
 
-
 #section-solutions-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
 }
 
 .solutions-card-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 95%;
-    max-width: 1000px;
-    min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  max-width: 1000px;
+  min-width: 300px;
 }
 
 .solutions-card {
-    height: 280px;
-    width: 100%;
-    margin: 0 0 50px 0;
-    display: flex;
-    flex-direction: column;
+  height: 280px;
+  width: 100%;
+  margin: 0 0 50px 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .solutions-card-content {
-    height: 275px;
-    width: 100%;
-    display: flex;
-    border-left: 5px solid darkslateblue;
-    background-color: var(--bg-color-card);
+  height: 275px;
+  width: 100%;
+  display: flex;
+  border-left: 5px solid darkslateblue;
+  background-color: var(--bg-color-card);
 }
 
 .solutions-card-content.active {
-    border-color: darkgreen;
+  border-color: darkgreen;
 }
 
 .solutions-card a:hover {
-    border-bottom: none;
-    background: darkgreen;
-    color: white;
+  border-bottom: none;
+  background: darkgreen;
+  color: white;
 }
 
 .solutions-card-bottom-border {
-    height: 5px;
-    width: 2%;
-    border-left: 5px solid transparent;
-    background: transparent;
+  height: 5px;
+  width: 2%;
+  border-left: 5px solid transparent;
+  background: transparent;
 }
 
 .solutions-card-bottom-border.active {
-    background: darkgreen;
-    border-color: darkgreen;
+  background: darkgreen;
+  border-color: darkgreen;
 }
 
 .card-img-wrapper {
-    height: 100%;
-    position: relative;
+  height: 100%;
+  position: relative;
 }
 
 .card-img {
-    height: 100%;
-    object-fit: cover;
+  height: 100%;
+  object-fit: cover;
 }
 
 .card-header {
-    position: absolute;
-    font-size: 1.8rem;
-    bottom: 0;
-    padding: 2px 4px;
-    text-align: center;
-    color: white;
-    margin: 0 0 15px 25px;
-    font-weight: 400;
-    background: darkslateblue;
+  position: absolute;
+  font-size: 1.8rem;
+  bottom: 0;
+  padding: 2px 4px;
+  text-align: center;
+  color: white;
+  margin: 0 0 15px 25px;
+  font-weight: 400;
+  background: darkslateblue;
 }
 
 .card-header.active {
-    background: darkgreen;
+  background: darkgreen;
 }
 
 .card-text {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
 }
 
 .card-text p {
-    width: 100%;
-    text-align: left;
-    font-size: 1.1rem;
-    font-weight: 300;
-    line-height: 25px;
-    margin: 10px 0;
+  width: 100%;
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 25px;
+  margin: 10px 0;
 }
 
 .card-text-citation.active {
-    text-decoration: underline;
-    color: darkgreen;
+  text-decoration: underline;
+  color: darkgreen;
 }
-
 
 /* ------------------------------------ */
 /* ---  Parallax image  section  ------ */
 /* ------------------------------------ */
 
-
 .img-parallax-wrapper {
-    background-image: url("../img/home_midscreen.png");
-    min-height: 450px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("../img/home_midscreen.png");
+  min-height: 450px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
 
 /* -------------------------------------------------------- */
 /* ---  GET INVOLVED section (includes Mailchimp form) ---- */
 /* -------------------------------------------------------- */
 
-
 #get-involved-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #get-involved-text {
-    margin: 50px 0 100px 0;
-    text-align: center;
-    width: 50%;
-    font-size: 1.3rem;
-    line-height: 23pt;
+  margin: 50px 0 100px 0;
+  text-align: center;
+  width: 50%;
+  font-size: 1.3rem;
+  line-height: 23pt;
 }
 
-
 #mc-signup-form-wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
 }
 
 .mc-field-group {
-    padding: 0 15px;
+  padding: 0 15px;
 }
 
 .mc-field-group label {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 .mc-field-group input {
-    background-color: rgba(0, 0, 0, 0);
-    color: var(--font-color-on-dark);
-    border: 3px solid var(--font-color-on-dark);
-    height: 25px;
-    font-family: "Josefin Sans", "sans-serif";
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--font-color-on-dark);
+  border: 3px solid var(--font-color-on-dark);
+  height: 25px;
+  font-family: "Josefin Sans", "sans-serif";
 }
 
 div.mce_inline_error {
-    margin-top: 10px;
-    text-align: center;
-    font-style: italic;
-    color: palevioletred;
+  margin-top: 10px;
+  text-align: center;
+  font-style: italic;
+  color: palevioletred;
 }
 
 #mce-FNAME {
-    width: 100px;
+  width: 100px;
 }
 
 #mce-LNAME {
-    width: 100px;
+  width: 100px;
 }
 
 #mce-EMAIL {
-    width: 200px;
+  width: 200px;
 }
 
 #mc-embedded-subscribe {
-    background-color: white;
-    height: 33px;
-    color: black;
-    border: 3px solid var(--font-color-on-dark);
-    font-family: "Josefin Sans", "sans-serif";
+  background-color: white;
+  height: 33px;
+  color: black;
+  border: 3px solid var(--font-color-on-dark);
+  font-family: "Josefin Sans", "sans-serif";
 }
-
 
 /* ------------------------------ */
 /* ---  FOOTER section  --------- */
 /* ------------------------------ */
 
-
 #footer-contents {
-    display: flex;
-    flex-direction: row;
-    align-items: start;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
 }
 
 #logo-footer {
-    height: 75px;
-    padding-right: 50px;
-    border-right: 1px solid rgb(175, 175, 175);
+  height: 75px;
+  padding-right: 50px;
+  border-right: 1px solid rgb(175, 175, 175);
 }
 
 .footer-vertical {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 3%;
 }
 
 .footer-vertical-heading {
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    margin-top: 0px;
-    margin-bottom: 3px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  margin-top: 0px;
+  margin-bottom: 3px;
 }
 
 .footer-vertical a {
-    font-size: 0.9rem;
-    margin-top: 5px;
-    width: fit-content;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  width: fit-content;
 }
 
 #copyright-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #copyright-text-wrapper {
-    width: 80%;
-    margin-top: 75px;
-    padding-top: 25px;
-    border-top: 1.0px solid rgb(175, 175, 175);
-    font-size: 0.7rem;
+  width: 80%;
+  margin-top: 75px;
+  padding-top: 25px;
+  border-top: 1px solid rgb(175, 175, 175);
+  font-size: 0.7rem;
 }
 
 #copyright-text-wrapper a:hover {
-    border-bottom: 1px solid;
+  border-bottom: 1px solid;
 }
-
 
 /* ---------------------------------------------------- */
 /* ----- CSS for NARROW WINDOW / MOBILE --------------- */
 /* ---------------------------------------------------- */
 
-
 @media only screen and (max-width: 950px) {
+  .page-section {
+    padding: 50px 0 80px 0;
+  }
 
-    .page-section {
-        padding: 50px 0 80px 0;
-    }
+  /* ---  INTRO section  ---------------- */
 
-    /* ---  INTRO section  ---------------- */
+  #intro-text-wrapper {
+    width: 80%;
+    position: absolute;
+    min-width: unset;
+    bottom: 20%;
+  }
 
-    #intro-text-wrapper {
-        width: 80%;
-        position: absolute;
-        min-width: unset;
-        bottom: 20%;
-    }
+  /* ---  SOLUTIONS section  ------------ */
 
-    /* ---  SOLUTIONS section  ------------ */
+  .solutions-card {
+    height: unset;
+    flex-direction: column;
+    width: 90%;
+    max-width: 500px;
+  }
 
-    .solutions-card {
-        height: unset;
-        flex-direction: column;
-        width: 90%;
-        max-width: 500px;
-    }
+  .solutions-card-content {
+    height: unset;
+    flex-direction: column;
+  }
 
-    .solutions-card-content {
-        height: unset;
-        flex-direction: column;
-    }
+  .image-wrapper {
+    width: 100%;
+  }
 
-    .image-wrapper {
-        width: 100%;
-    }
+  .card-img {
+    width: 100%;
+  }
 
-    .card-img {
-        width: 100%;
-    }
+  .card-text {
+    width: unset;
+    padding: 10px 30px;
+  }
 
-    .card-text {
-        width: unset;
-        padding: 10px 30px;
-    }
+  .card-text-citation {
+    text-decoration: underline;
+  }
 
-    .card-text-citation {
-        text-decoration: underline;
-    }
+  /* ---  Parallax image section  ------- */
 
+  .img-parallax-wrapper {
+    background-attachment: unset;
+  }
 
-    /* ---  Parallax image section  ------- */
+  /* ---  GET INVOLVED section  --------- */
 
-    .img-parallax-wrapper {
-        background-attachment: unset;
-    }
+  #get-involved-text {
+    width: 80%;
+    font-size: 1.2rem;
+    margin: 0 0 50px 0;
+  }
 
-    /* ---  GET INVOLVED section  --------- */
+  #mc-signup-form-wrapper {
+    flex-direction: column;
+    align-items: unset;
+  }
 
-    #get-involved-text {
-        width: 80%;
-        font-size: 1.2rem;
-        margin: 0 0 50px 0;
-    }
+  .mc-field-group {
+    padding: 10px 0;
+  }
 
-    #mc-signup-form-wrapper {
-        flex-direction: column;
-        align-items: unset;
-    }
+  .mc-field-group label {
+    margin-right: 5px;
+  }
 
-    .mc-field-group {
-        padding: 10px 0;
-    }
+  .mc-field-group label {
+    display: inline-block;
+    width: 50px;
+  }
 
-    .mc-field-group label {
-        margin-right: 5px;
-    }
+  .optionalParent {
+    margin-top: 10px;
+    margin-left: 60px;
+  }
 
-    .mc-field-group label {
-        display: inline-block;
-        width: 50px;
-    }
+  /* ---  FOOTER section  ---------------- */
 
-    .optionalParent {
-        margin-top: 10px;
-        margin-left: 60px;
-    }
+  #footer-contents {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    /* ---  FOOTER section  ---------------- */
+  #logo-footer {
+    padding-right: 0;
+    padding-bottom: 50px;
+    border-right: none;
+    border-bottom: 1px solid rgb(175, 175, 175);
+  }
 
-    #footer-contents {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #logo-footer {
-        padding-right: 0;
-        padding-bottom: 50px;
-        border-right: none;
-        border-bottom: 1px solid rgb(175, 175, 175);
-    }
-
-    .footer-vertical {
-        align-items: center;
-        padding: 50px 0 0 0;
-    }
-
+  .footer-vertical {
+    align-items: center;
+    padding: 50px 0 0 0;
+  }
 }
-
-
 
 /* ---------------------------------------------------- */
 /* ----- CSS for VERY NARROW WINDOW ------------------- */
 /* ---------------------------------------------------- */
 
-
 @media only screen and (max-width: 500px) {
+  #nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    position: absolute;
+    top: 28px;
+    width: unset;
+    min-width: unset;
+  }
 
-    #nav-bar {
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        justify-content: center;
-        position: absolute;
-        top: 28px;
-        width: unset;
-        min-width: unset;
-    }
-
-    .nav-link {
-        margin-bottom: 8px;
-    }
-
+  .nav-link {
+    margin-bottom: 8px;
+  }
 }
