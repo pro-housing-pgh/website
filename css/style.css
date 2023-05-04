@@ -121,13 +121,13 @@ a:active {
   position: absolute;
   top: 40px;
   right: 5%;
-  width: 11%;
   min-width: 190px;
 }
 
 .nav-link {
   border: 2px solid transparent;
   font-size: 1.1rem;
+  margin-left: 25px;
 }
 
 .nav-link:hover {
@@ -505,7 +505,7 @@ div.mce_inline_error {
 /* ----- CSS for VERY NARROW WINDOW ------------------- */
 /* ---------------------------------------------------- */
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   #nav-bar {
     display: flex;
     flex-direction: column;
@@ -513,11 +513,11 @@ div.mce_inline_error {
     justify-content: center;
     position: absolute;
     top: 28px;
-    width: unset;
     min-width: unset;
   }
 
   .nav-link {
+    margin-left: 0;
     margin-bottom: 8px;
   }
 }
